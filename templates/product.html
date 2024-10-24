@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="product-detail">
+    <img src="{{ url_for('static', filename='img/product1.jpg') }}" alt="Produto 1">
+    <h2>Amêndoas natural - Alesto - 125 g</h2>
+    <p>Ingredientes: Amêndoas., Alergénios: Nozes, Vestígios: Nozes, Amendoins</p>
+    <p>Informações Nutricionais: 621 kcal, 53,3g Gorduras/lípidos, Carboidratos 4,8g, etc.</p>
+    <p>Nutri-Score: A</p>
+    <p>Categoria: Alimentos e bebidas à base de plantas</p>
+    <a href="{{ url_for('homepage') }}" class="btn">Voltar</a>
+</section>
+{% endblock %}
